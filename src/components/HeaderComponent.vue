@@ -21,7 +21,7 @@ export default {
         </ul>
       </div>
       <div class="col-33 logo-header">
-        <img src="./img/boolean-logo.png" alt="Boolean logo" />
+        <img src="../../img/boolean-logo.png" alt="Boolean logo" />
       </div>
       <div class="col-33 align-end">
         <ul>
@@ -29,7 +29,7 @@ export default {
             <a class="white-text boldness" href="">
               <img
                 class="logo"
-                src="./img/account-logo.png"
+                src="../../img/account-logo.png"
                 alt="Account logo"
               />
             </a>
@@ -38,14 +38,18 @@ export default {
             <a class="white-text boldness" href="">
               <img
                 class="logo"
-                src="./img/favourites-logo.png"
+                src="../../img/favourites-logo.png"
                 alt="Favourites logo"
               />
             </a>
           </li>
           <li>
             <a class="white-text boldness" href="">
-              <img class="logo" src="./img/chart-logo.png" alt="Chart logo" />
+              <img
+                class="logo"
+                src="../../img/chart-logo.png"
+                alt="Chart logo"
+              />
             </a>
           </li>
         </ul>

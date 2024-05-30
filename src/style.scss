@@ -1,0 +1,203 @@
+/*  GLOBAL PAGE SETTINGS  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+/*  /GLOBAL PAGE SETTINGS  */
+
+/*  HEADER  */
+header {
+  width: 100%;
+  background-color: rgb(255, 105, 0);
+  box-shadow: 0 2px rgb(170, 170, 170);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+.logo-header {
+  text-align: center;
+}
+
+.logo-header > img {
+  width: 20%;
+}
+/*  /HEADER  */
+
+/*  OBJECTS MAIN LIST  */
+.heart {
+  position: absolute;
+  width: 5%;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-style: none;
+}
+/*  /OBJECTS MAIN LIST  */
+
+/*  FOOTER  */
+footer {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+}
+
+.socials-list > a {
+  margin-right: 2px;
+}
+/*  /FOOTER  */
+
+/*  UTILITY TEXTS  */
+a {
+  text-decoration: none;
+}
+
+.font-size {
+  font-size: 11px;
+}
+
+.red-text {
+  color: red;
+}
+
+.align-end {
+  text-align: end;
+}
+
+.text-line {
+  text-decoration: line-through;
+}
+
+.boldness {
+  font-weight: bold;
+}
+/*  /UTILITY TEXTS  */
+
+/*  CONTAINERS  */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.col-33 {
+  width: calc(100% / 3);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.col-33-img {
+  width: calc(100% / 3 - 10px);
+  position: relative;
+}
+
+.positioned-boxes {
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+/*  /CONTAINERS  */
+
+/*  LISTS */
+li {
+  display: inline;
+  list-style-type: none;
+  font-size: 13px;
+}
+
+.white-text {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.logo {
+  width: 3%;
+  margin-right: 5px;
+}
+/*  /LISTS  */
+
+/*  UTILITY COLORS  */
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-white {
+  background-color: white;
+}
+/*  /UTILITY COLORS  */
+
+/*  UTILITY SPACING  */
+.d-flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.left-position {
+  left: 55px;
+}
+
+.right-position {
+  right: 0;
+}
+
+.top-position {
+  top: 5px;
+}
+
+.margin-top {
+  margin-top: 80px;
+}
+
+.margin-right {
+  margin-right: 15px;
+}
+/*  /UTILITY SPACING  */
+
+/*  HOVER EVENTS  */
+.object {
+  width: 100%;
+  object-fit: contain;
+}
+
+.object-hidden {
+  display: none;
+}
+
+.content:hover .object-hidden {
+  display: inline-block;
+  width: 100%;
+  object-fit: contain;
+}
+
+.content:hover .object {
+  display: none;
+}
+
+.heart:hover {
+  color: red;
+  cursor: pointer;
+}
+/*  /HOVER EVENTS  */
