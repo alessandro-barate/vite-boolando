@@ -121,14 +121,18 @@ export default {
         &hearts;
       </button>
     </div>
-    <span class="positioned-boxes bg-red boldness">{{
-      article.badges.value
-    }}</span>
+    <span
+      v-for="(badge, index) in articles.badges"
+      class="positioned-boxes bg-red boldness"
+      >{{ articles.badge }}</span
+    >
     <span class="positioned-boxes bg-green left-position boldness">{{
-      article.badges[0].value
+      articles.badge
     }}</span>
     <div>{{ article.brand }}</div>
     <div class="item-name boldness">{{ article.name }}</div>
+
+    <!-- TODO: stampare il prezzo scontato corretto -->
     <span class="red-text boldness">14,99&euro;</span>
     <span class="text-line">{{ article.price }}&euro;</span>
   </div>
