@@ -25,7 +25,7 @@ export default {
         },
         {
           id: 2,
-          frontImage: "2.webp",
+          frontImage: "../img/2.webp",
           backImage: "2b.webp",
           brand: "Guess",
           name: "Roses Tee",
@@ -40,7 +40,7 @@ export default {
         },
         {
           id: 3,
-          frontImage: "3.webp",
+          frontImage: "../img/3.webp",
           backImage: "3b.webp",
           brand: "Come Zucchero Filato",
           name: "Voglia di colori pastello",
@@ -55,7 +55,7 @@ export default {
         },
         {
           id: 4,
-          frontImage: "4.webp",
+          frontImage: "../img/4.webp",
           backImage: "4b.webp",
           brand: "Levi's",
           name: "Tee Unisex",
@@ -74,7 +74,7 @@ export default {
         },
         {
           id: 5,
-          frontImage: "5.webp",
+          frontImage: "../img/5.webp",
           backImage: "5b.webp",
           brand: "Maya Deluxe",
           name: "Stripe Bodice",
@@ -93,7 +93,7 @@ export default {
         },
         {
           id: 6,
-          frontImage: "6.webp",
+          frontImage: "../img/6.webp",
           backImage: "6b.webp",
           brand: "Esprit",
           name: "Maglione - Black",
@@ -121,13 +121,15 @@ export default {
         &hearts;
       </button>
     </div>
-    <span class="positioned-boxes bg-red boldness">-50%</span>
-    <span class="positioned-boxes bg-green left-position boldness"
-      >Sostenibilità</span
-    >
-    <div>Levi's</div>
-    <div class="item-name boldness">RELAXED FIT TEE UNISEX</div>
+    <span class="positioned-boxes bg-red boldness">{{
+      article.badges.value
+    }}</span>
+    <span class="positioned-boxes bg-green left-position boldness">{{
+      article.badges[0].value
+    }}</span>
+    <div>{{ article.brand }}</div>
+    <div class="item-name boldness">{{ article.name }}</div>
     <span class="red-text boldness">14,99&euro;</span>
-    <span class="text-line">29,99&euro;</span>
+    <span class="text-line">{{ article.price }}&euro;</span>
   </div>
 </template>
