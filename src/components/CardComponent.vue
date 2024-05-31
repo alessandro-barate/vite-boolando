@@ -1,14 +1,122 @@
 <script>
 export default {
   name: "CardComponent",
+  data() {
+    return {
+      articles: [
+        {
+          id: 1,
+          frontImage: "../img/1.webp",
+          backImage: "1b.webp",
+          brand: "Levi's",
+          name: "Relaxed Fit",
+          price: 29.99,
+          isInFavorites: true,
+          badges: [
+            {
+              type: "tag",
+              value: "Sostenibilità",
+            },
+            {
+              type: "discount",
+              value: "-50%",
+            },
+          ],
+        },
+        {
+          id: 2,
+          frontImage: "2.webp",
+          backImage: "2b.webp",
+          brand: "Guess",
+          name: "Roses Tee",
+          price: 20.99,
+          isInFavorites: true,
+          badges: [
+            {
+              type: "discount",
+              value: "-30%",
+            },
+          ],
+        },
+        {
+          id: 3,
+          frontImage: "3.webp",
+          backImage: "3b.webp",
+          brand: "Come Zucchero Filato",
+          name: "Voglia di colori pastello",
+          price: 129.99,
+          isInFavorites: false,
+          badges: [
+            {
+              type: "discount",
+              value: "-30%",
+            },
+          ],
+        },
+        {
+          id: 4,
+          frontImage: "4.webp",
+          backImage: "4b.webp",
+          brand: "Levi's",
+          name: "Tee Unisex",
+          price: 14.99,
+          isInFavorites: false,
+          badges: [
+            {
+              type: "tag",
+              value: "Sostenibilità",
+            },
+            {
+              type: "discount",
+              value: "-50%",
+            },
+          ],
+        },
+        {
+          id: 5,
+          frontImage: "5.webp",
+          backImage: "5b.webp",
+          brand: "Maya Deluxe",
+          name: "Stripe Bodice",
+          price: 99.99,
+          isInFavorites: true,
+          badges: [
+            {
+              type: "tag",
+              value: "Sostenibilità",
+            },
+            {
+              type: "discount",
+              value: "-50%",
+            },
+          ],
+        },
+        {
+          id: 6,
+          frontImage: "6.webp",
+          backImage: "6b.webp",
+          brand: "Esprit",
+          name: "Maglione - Black",
+          price: 29.99,
+          isInFavorites: true,
+          badges: [
+            {
+              type: "tag",
+              value: "Sostenibilità",
+            },
+          ],
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <template>
-  <div class="col-33-img">
+  <div v-for="(article, index) in articles" :key="index" class="col-33-img">
     <div class="content">
-      <img class="object" src="../../img/1.webp" alt="" />
-      <img class="object-hidden" src="../../img/1b.webp" alt="" />
+      <img class="object" :src="article.frontImage" alt="" />
+      <img class="object-hidden" :src="article.backImage" alt="" />
       <button class="heart bg-white top-position right-position">
         &hearts;
       </button>

@@ -14,26 +14,6 @@ export default {
         <!-- First article -->
         <CardComponent />
         <!--  FINE First article -->
-
-        <!-- Second article -->
-        <CardComponent />
-        <!-- FINE Second article -->
-
-        <!-- Third article -->
-        <CardComponent />
-        <!-- FINE Third article -->
-
-        <!-- Fourth article -->
-        <CardComponent />
-        <!-- FINE Fourth article -->
-
-        <!-- Fifth article -->
-        <CardComponent />
-        <!-- FINE Fifth article -->
-
-        <!-- Sixth article -->
-        <CardComponent />
-        <!-- FINE Sixth article -->
       </div>
     </div>
   </main>
