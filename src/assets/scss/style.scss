@@ -1,3 +1,10 @@
+@import "./_partials/global"; /* Aggiungere il as * ; a tutti */
+@import "./_partials/reset";
+@import "./_partials/utility";
+@import "./_partials/variables";
+
+
+
 /*  GLOBAL PAGE SETTINGS  */
 * {
   padding: 0;
